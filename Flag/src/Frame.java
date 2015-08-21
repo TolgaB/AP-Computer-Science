@@ -18,6 +18,9 @@ public class Frame extends JFrame {
 		int newNum = i * 30;
 		System.out.println(newNum);
 	    g.drawLine(100, newNum, 841, newNum);
+	    if (i == 14) {
+	    	System.out.println("Super special final size number is" + newNum);
+	    }
 		}
 		//Line going down on left side
 	    g.drawLine(100, 30, 100, 420);
@@ -38,7 +41,6 @@ public class Frame extends JFrame {
 	    		g.setColor(Color.red);
 	    		int newNum = 60 * u;
 	    		newNum = newNum + 30;
-	    		System.out.println(newNum);
 	    		g.fillRect(100, newNum, 741, 30);
 	    	}
 	    	
@@ -49,5 +51,33 @@ public class Frame extends JFrame {
 	     */
 	    g.setColor(Color.BLUE);
 	    g.fillRect(100, 30, 296, 210);
+	   for (int k =1; k < 10; k++) {
+		   if (k % 2 == 0) {
+			   //When even
+			   for (int h =0; h < 5; h++) {
+				   
+			   }
+		   }
+		   else {
+			   //When odd
+			   for (int o =1; o < 7; o++) {
+				   g.setColor(Color.green);
+				   int yNum =  (int) 22.68;
+				   double xNum;
+				   if (o > 1) {
+					   xNum = 26.46 + (o * 26.46);
+				   }
+				   else {
+				       xNum = (o * 26.46);
+				   }
+				   
+				   xNum = xNum + 100;
+				   System.out.println("Non casted x = " + xNum + "Casted int is = " + (int) xNum);
+				   
+				   yNum = yNum + 30;
+				   g.fillRect((int) xNum, yNum, 5, 5);
+			   }
+		   }
+	   }
 	}
 }
