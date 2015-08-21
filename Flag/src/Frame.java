@@ -24,20 +24,21 @@ public class Frame extends JFrame {
 	    //Line going down on the riht side
 	    g.drawLine(841, 30, 841, 420);
 	    //Line that draws the box
-	    g.drawLine(444, 30, 296,210);
+	   
 	    
 	    /*
 	     * Fill Lines
 	     */
-	    for (int u = 1; u < 9; u++) {
-	    	if ( u ==1) {
+	    for (int u = 0; u < 9; u++) {
+	    	if ( u ==0) {
 	    		g.setColor(Color.red);
 	    		g.fillRect(100, 30, 741, 30);
 	    	}
 	    	else {
 	    		g.setColor(Color.red);
-	    		int newNum = 30 * u;
-	    		newNum = newNum + 60;
+	    		int newNum = 60 * u;
+	    		newNum = newNum + 30;
+	    		System.out.println(newNum);
 	    		g.fillRect(100, newNum, 741, 30);
 	    	}
 	    	
