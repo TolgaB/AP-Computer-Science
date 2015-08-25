@@ -54,25 +54,37 @@ public class Frame extends JFrame {
 	   for (int k =1; k < 10; k++) {
 		   if (k % 2 == 0) {
 			   //When even
-			   for (int h =0; h < 5; h++) {
+			   for (int h =1; h < 6; h++) {
+				   g.setColor(Color.green);
+				   int yNum = (int) 22.68 * k;
+				   double xNum = 0;
+				   if (h > 1) {
+					   
+				   }
+				   else {
+					   xNum = 52.92;
+				   }
+				   xNum = xNum + 100;
 				   
+				   yNum = yNum + 30;
+				   g.fillRect((int) xNum, yNum, 5, 5);
 			   }
 		   }
 		   else {
 			   //When odd
 			   for (int o =1; o < 7; o++) {
 				   g.setColor(Color.green);
-				   int yNum =  (int) 22.68;
+				   int yNum =  (int) 22.68 * k;
 				   double xNum;
 				   if (o > 1) {
-					   xNum = 26.46 + (o * 26.46);
+					   xNum = (o * 52.92) - 30;
 				   }
 				   else {
-				       xNum = (o * 26.46);
+				       xNum =  (o * 26.46);
 				   }
 				   
 				   xNum = xNum + 100;
-				   System.out.println("Non casted x = " + xNum + "Casted int is = " + (int) xNum);
+				
 				   
 				   yNum = yNum + 30;
 				   g.fillRect((int) xNum, yNum, 5, 5);
