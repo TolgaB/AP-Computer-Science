@@ -15,7 +15,7 @@
 1.2 
 	The expression is as follows in prefix form
 	(/ (+ 4(+ 5(- 2 (- 3 (+ 6 (/ 4 5))))))(* 3 (* (- 6 2)(- 2 7))))
-	
+
 1.3 The function is below
 
 		(define (largestTwo a b c)
@@ -24,3 +24,8 @@
   	     (if (= c (min a b c)) (+ (* a a) (* b b)))
   		)
 1.4 
+	A is a constant in this procedure, so testing if b is negative is completed by the (if (> b 0)). The result of the test determines if b should be turned positive or negative. A double negative is essentially a positive, so this is used to change b from negative to positive after the test. 
+1.5
+	If Ben runs this program on an applicative order system it will run forever infinitely trying to evaluate the expression. On a normal order machine it will be solved.
+1.6
+	Her program will run into an error because she trys to use the expression good-enough? this is not a built in function in scheme and will crash her program when trying to test it.
