@@ -1,0 +1,26 @@
+
+1.1
+	The results of each expression are as follows
+		10
+		12
+		8
+		3
+		6
+		19
+		#f
+		4
+		16
+		6
+		16
+1.2 
+	The expression is as follows in prefix form
+	(/ (+ 4(+ 5(- 2 (- 3 (+ 6 (/ 4 5))))))(* 3 (* (- 6 2)(- 2 7))))
+	
+1.3 The function is below
+
+		(define (largestTwo a b c)
+ 		 (if (= a (min a b c)) (+ (* b b) (* c c)))
+ 		 (if (= b (min a b c)) (+ (* a a) (* c c)))
+  	     (if (= c (min a b c)) (+ (* a a) (* b b)))
+  		)
+1.4 
